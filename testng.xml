@@ -5,7 +5,7 @@
 	<test name="Lambdatest ToDO Sample Test" annotations="JDK"
 		preserve-order="true">
 		<classes>
-			<class name="MyRunner.TestRunner" />
+			<class name="stepDefinitions.TestRunner" />
 		</classes>
 	</test>
 </suite>
