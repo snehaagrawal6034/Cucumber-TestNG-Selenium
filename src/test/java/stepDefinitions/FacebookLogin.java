@@ -1,13 +1,10 @@
 package stepDefinitions;
 
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 
 public class FacebookLogin {
 	public static String status = "failed";
@@ -35,7 +32,7 @@ public class FacebookLogin {
 		driver.findElement(By.name("login")).click();
 	}
 
-	@Then ("user should successfully login to facebook")
+	@Then("user should successfully login to facebook")
 	public void user_should_successfully_login_to_facebook() {
 		System.out.println("user successfully login to facebook page");
 	}
